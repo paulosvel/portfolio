@@ -1,0 +1,27 @@
+.App {
+display: flex;
+flex-direction: column;
+padding-left: 10%;
+padding: 10%;
+margin-left: 20px;
+}
+
+h1
+{
+  color: #64ffda;
+  font-family: RobotoMono;
+  font-size: 15px;
+  font-weight: 400;
+}
+
+p
+{
+color: #ccd6f6;
+font-weight: 600;
+}
+
+
+
+
+
+
