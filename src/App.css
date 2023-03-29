@@ -1,27 +1,46 @@
 .App {
-display: flex;
-flex-direction: column;
-padding-left: 10%;
-padding: 10%;
-margin-left: 20px;
+  display: flex;
+  flex-direction: column;
+  padding-left: 10%;
+  padding: 10%;
+  margin-left: 20px;
 }
 
-h1
-{
+h1 {
   color: #64ffda;
-  font-family: RobotoMono;
   font-size: 15px;
   font-weight: 400;
 }
 
-p
-{
-color: #ccd6f6;
-font-weight: 600;
+p {
+  color: #ccd6f6;
+  font-weight: 600;
 }
 
+.navbar {
+  display: flex;
+  justify-content: right;
+  padding-right: 30px;
+  padding-top: 40px;
+  align-items: center;
+  margin-right: 30px;
+}
 
+.about:hover {
+  color: #64ffda;
+}
 
+.experience:hover {
+  color: #64ffda;
+}
+
+.projects:hover {
+  color: #64ffda;
+}
+
+.contact:hover {
+  color: #64ffda;
+}
 
 
 
