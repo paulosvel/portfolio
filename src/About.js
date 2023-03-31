@@ -2,9 +2,9 @@ import React from "react";
 const About = () => {
   return (
     <p
-      className="about"
+      className="aboutext"
       id="about"
-      style={{ width: "30%", textAlign: "center", height: "100vh" }}
+      style={{ width: "50", margin:"auto", paddingTop:"30%"}}
     >
       Hello! My name is Paulos, and I am a self-taught full stack web developer
       who is passionate about creating beautiful and functional websites and

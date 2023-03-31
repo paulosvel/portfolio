@@ -2,7 +2,8 @@ import { HashLink } from "react-router-hash-link";
 import { BrowserRouter } from "react-router-dom";
 import "./App.css";
 import About from "./About";
-import React from "react";
+import { Link } from "react-scroll";
+
 function App() {
   return (
     <BrowserRouter>
@@ -17,8 +18,11 @@ function App() {
             top: "0",
           }}
         >
-          <HashLink
-            to = "#about" 
+         <Link
+            activeClass="active"
+           smooth to="about"
+            spy={true}
+            duration={700}
             className="about"
             style={{
               paddingRight: "2%",
@@ -27,9 +31,9 @@ function App() {
               cursor: "pointer",
               textDecoration: "none",
             }}
-          smooth>
+          >
             <span style={{ color: "#64ffda" }}>01.</span> About{" "}
-          </HashLink>
+          </Link>
           <a
             className="experience"
             style={{
