@@ -20,15 +20,16 @@ p {
 .navbar {
   display: flex;
   justify-content: right;
-  padding-right: 30px;
-  padding-top: 40px;
   align-items: center;
-  margin-right: 30px;
+  padding: 2rem;
+
 }
 
-.about{
+
+
+.about {
   color: #ccd6f6;
- }
+}
 
 .about:hover {
   color: #64ffda;
@@ -46,9 +47,20 @@ p {
   color: #64ffda;
 }
 
-.resume:hover{
-  color:rgba(100,255,218,0.1);
+.resume:hover {
+  color: rgba(100, 255, 218, 0.1);
   background-color: red;
 }
 
+.email:before{
+  flex-direction: row;
+  content:" ";
+  height: 80px;
+  width: 2px;
+  background: #ccd6f6;
+  position: absolute;
+  right: 12px;
+  top: 200px;
 
+
+}

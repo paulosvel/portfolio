@@ -1,11 +1,15 @@
 import { HashLink } from "react-router-hash-link";
 import { BrowserRouter } from "react-router-dom";
 import "./App.css";
-import About from "./About";
+import About from "./components/About";
 import { Link } from "react-scroll";
+import { useState } from "react";
+import SidebarEmail from "./components/SidebarEmail";
 
 function App() {
+
   return (
+
     <BrowserRouter>
       <>
         <div
@@ -14,8 +18,8 @@ function App() {
             color: "#CCD6F6",
             fontFamily:
               '"SF Mono","Fira Code","Fira Mono","Roboto Mono",monospace',
-            position: "sticky",
-            top: "0",
+              position: "sticky",
+              top:"0"
           }}
         >
          <Link
@@ -126,6 +130,7 @@ function App() {
           </p>
         </div>
       </>
+      <SidebarEmail />
       <About />
     </BrowserRouter>
   );
