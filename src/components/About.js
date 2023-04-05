@@ -1,4 +1,18 @@
+import { useEffect } from "react";
 const About = () => {
+  const languages = [
+    { name: "HTML", category: "front-end" },
+    { name: "CSS", category: "front-end" },
+    { name: "Javascript", category: "front-end" },
+    { name: "React.js", category: "front-end" },
+    { name: "Django", category: "back-end" },
+    { name: "PHP", category: "back-end" },
+    { name: "Express.js", category: "back-end" },
+    { name: "Python", category: "back-end" },
+  ];
+  useEffect(() => {
+    console.log(languages);
+  });
   return (
     <>
       <div
@@ -42,12 +56,11 @@ const About = () => {
             free time.
             <img
               style={{
-                paddingLeft: "30px",
+                marginLeft: "30px",
                 height: "30%",
                 maxWidth: "40%",
-               
+                border: "2px solid #64ffda",
                 borderRadius: "20%",
-                overflow:"clip"
               }}
               src="https://www.hostinger.com/tutorials/wp-content/uploads/sites/2/2022/04/web-developer-portfolio.webp"
             ></img>
@@ -68,21 +81,35 @@ const About = () => {
             to get in touch if you're interested in working together!"
           </p>
           Here are a few technologies I've been working with recently:
-          <div className="technologies">
-            <ul>
-              Front-End
-              <li>HTML</li>
-              <li>CSS</li>
-              <li>Javascript</li>
-              <li>React.Js</li>
-              <li>Js</li>
-            </ul>
-            <ul>
-              Back-End
-              <li>Django</li>
-              <li>PHP</li>
-              <li>Express.Js</li>
-            </ul>
+          <div
+            className="technologies"
+            style={{ display: "flex", flexDirection: "row" }}
+          >
+            <div style={{ display: "flex", flexDirection: "column" }}>
+              {languages
+                .filter((x) => {
+                  return x.category === "front-end";
+                })
+                .map((x) => {
+                  return <li>{x.name}</li>;
+                })}
+            </div>
+            <div
+              style={{
+                display: "flex",
+                flexDirection: "column",
+                marginLeft: "10px",
+                paddingLeft: "10px",
+              }}
+            >
+              {languages
+                .filter((x) => {
+                  return x.category === "back-end";
+                })
+                .map((x) => {
+                  return <li>{x.name}</li>;
+                })}
+            </div>
           </div>
         </p>
       </div>

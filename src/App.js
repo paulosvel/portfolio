@@ -47,18 +47,7 @@ function App() {
               cursor: "pointer",
             }}
           >
-            <span style={{ color: "#64ffda" }}>02.</span>Experience{" "}
-          </a>
-          <a
-            className="projects"
-            style={{
-              paddingRight: "2%",
-              fontFamily:
-                '"SF Mono","Fira Code","Fira Mono","Roboto Mono",monospace',
-              cursor: "pointer",
-            }}
-          >
-            <span style={{ color: "#64ffda" }}>03.</span>Projects{" "}
+            <span style={{ color: "#64ffda" }}>02.</span>Projects{" "}
           </a>
           <a
             className="contact"
@@ -69,7 +58,7 @@ function App() {
               cursor: "pointer",
             }}
           >
-            <span style={{ color: "#64ffda" }}>04.</span>Contact{" "}
+            <span style={{ color: "#64ffda" }}>03.</span>Contact{" "}
           </a>
           <button
             className="resume"

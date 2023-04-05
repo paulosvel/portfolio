@@ -5,8 +5,7 @@ const SidebarEmail = () => {
         display: "flex",
         justifyContent: "flex-end",
         alignItems: "center",
-        position:"sticky",
-        top:"0",
+      
       }}
     >
       <span
@@ -15,6 +14,8 @@ const SidebarEmail = () => {
           color: "#ccd6f6",
           textAlign: "center",
           writingMode: "vertical-rl",
+          position:"sticky",
+          top:"0",
         }}
       >
         paul2001vel@gmail.com
