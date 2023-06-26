@@ -5,6 +5,7 @@ import About from "./components/About";
 import { Link } from "react-scroll";
 import { useState } from "react";
 import SidebarEmail from "./components/SidebarEmail";
+import Projects from "./components/Projects";
 
 function App() {
 
@@ -121,6 +122,7 @@ function App() {
       </>
       <SidebarEmail />
       <About />
+      <Projects />
     </BrowserRouter>
   );
 }
