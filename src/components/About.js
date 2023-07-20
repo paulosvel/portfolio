@@ -1,4 +1,5 @@
 import { useEffect } from "react";
+import { Box } from "@mui/material";
 const About = () => {
   const languages = [
     { name: "HTML", category: "front-end" },
@@ -15,9 +16,9 @@ const About = () => {
   });
   return (
     <>
-      <div
+      <Box
         className="aboutsection"
-        style={{
+        sx={{
           display: "flex",
           flexDirection: "column",
           alignItems: "center",
@@ -44,7 +45,7 @@ const About = () => {
             width: "30%",
           }}
         >
-          <div style={{ display: "flex", flexDirection: "row", width: "200%" }}>
+          <Box sx={{ display: "flex", flexDirection: "row", width: "200%" }}>
             Hello! My name is Paulos, and I am a self-taught full stack web
             developer who is passionate about creating beautiful and functional
             websites and applications. I am currently studying software
@@ -64,7 +65,7 @@ const About = () => {
               }}
               src="https://www.hostinger.com/tutorials/wp-content/uploads/sites/2/2022/04/web-developer-portfolio.webp"
             ></img>
-          </div>
+          </Box>
           <p
             style={{
               margin: "",
@@ -81,11 +82,11 @@ const About = () => {
             to get in touch if you're interested in working together!"
           </p>
           Here are a few technologies I've been working with recently:
-          <div
+          <Box
             className="technologies"
-            style={{ display: "flex", flexDirection: "row" }}
+            sx={{ display: "flex", flexDirection: "row" }}
           >
-            <div style={{ display: "flex", flexDirection: "column" }}>
+            <Box sx={{ display: "flex", flexDirection: "column" }}>
               {languages
                 .filter((x) => {
                   return x.category === "front-end";
@@ -93,9 +94,9 @@ const About = () => {
                 .map((x) => {
                   return <li>{x.name}</li>;
                 })}
-            </div>
-            <div
-              style={{
+            </Box>
+            <Box
+              sx={{
                 display: "flex",
                 flexDirection: "column",
                 marginLeft: "10px",
@@ -109,10 +110,10 @@ const About = () => {
                 .map((x) => {
                   return <li>{x.name}</li>;
                 })}
-            </div>
-          </div>
+            </Box>
+          </Box>
         </p>
-      </div>
+      </Box>
     </>
   );
 };

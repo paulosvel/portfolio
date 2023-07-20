@@ -1,9 +1,8 @@
 const SidebarEmail = () => {
   return (
-    <div>
       <span>
       </span>
-    </div>
+ 
 
   );
 };

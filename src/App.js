@@ -6,6 +6,8 @@ import { Link } from "react-scroll";
 import { useState } from "react";
 import SidebarEmail from "./components/SidebarEmail";
 import Projects from "./components/Projects";
+import Experience from "./components/Experience";
+import { Box } from "@mui/material";
 
 function App() {
 
@@ -13,7 +15,7 @@ function App() {
 
     <BrowserRouter>
       <>
-        <div
+        <Box
           className="navbar"
           style={{
             color: "#CCD6F6",
@@ -28,7 +30,7 @@ function App() {
            smooth to="about"
             spy={true}
             duration={700}
-            className="about"
+            
             style={{
               paddingRight: "2%",
               fontFamily:
@@ -39,8 +41,23 @@ function App() {
           >
             <span style={{ color: "#64ffda" }}>01.</span> About{" "}
           </Link>
+          <Link
+            activeClass="active"
+           smooth to="experience"
+            spy={true}
+            duration={700}
+            style={{
+              paddingRight: "2%",
+              fontFamily:
+                '"SF Mono","Fira Code","Fira Mono","Roboto Mono",monospace',
+              cursor: "pointer",
+              textDecoration: "none",
+            }}
+          >
+            <span style={{ color: "#64ffda" }}>02.</span> Experience{" "}
+          </Link>
           <a
-            className="experience"
+            className="projects"
             style={{
               paddingRight: "2%",
               fontFamily:
@@ -48,7 +65,7 @@ function App() {
               cursor: "pointer",
             }}
           >
-            <span style={{ color: "#64ffda" }}>02.</span>Projects{" "}
+            <span style={{ color: "#64ffda" }}>03.</span>Projects{" "}
           </a>
           <a
             className="contact"
@@ -77,8 +94,8 @@ function App() {
           >
             Resume
           </button>
-        </div>
-        <div className="App">
+        </Box>
+        <Box className="App">
           <h1
             style={{
               fontSize: "16px",
@@ -113,15 +130,16 @@ function App() {
               fontSize: "20",
             }}
           >
-            I am a self-taught full stack developer with a passion for building
+            I am a Full Stack Developer with a passion for building
             web applications. Through self-directed learning and practical
             application, I have gained a deep understanding of both front-end
             and back-end development.
           </p>
-        </div>
+        </Box>
       </>
       <SidebarEmail />
       <About />
+      <Experience />
       <Projects />
     </BrowserRouter>
   );
